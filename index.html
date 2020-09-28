@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sign In</title>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+  <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-databse.js"></script>
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon.ico">
+  <link rel="shortcut icon" sizes="512x512" href="android-chrome-512x512.png">
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-analytics.js"></script>
+
+
+  </script>
+
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+
+<body>
+
+  <div class="top">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+  <a class="navbar-brand tite" href="#">Wnkl</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse contet" id="navbarNavDropdown">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact <span class="sr-only">(current)</span></a>
+      </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+  </div>
+  <div class="box">
+    <form class="form-signin" action="">
+      <h1 class="h4 cn">Sign in   </h1>
+      <label for="inputEmail" class="sr-only">Email address</label>
+      <input type="email" class="form-control" placeholder="Email address"  id="email" required autofocus>
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input type="password"  class="form-control" placeholder="Password" id="password" required>
+      <h6 class="cd " onclick="resetPassword()">Forgot Password?</h6>
+      <button onclick="login()" type="button" class ="btn btn-primary btn-block" name="button">Sign In</button>
+    </form>
+
+
+  </div>
+
+  <h6 class="footer">&copy; Wnkl</h6>
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>

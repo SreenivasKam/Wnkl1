@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Vendors</title>
+  <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+  <link rel="stylesheet" href="vendors.css">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon.ico">
+  <link rel="shortcut icon" sizes="512x512" href="android-chrome-512x512.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-analytics.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="app.js">
+    < script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"
+    integrity = "sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J"
+    crossorigin = "anonymous" >
+  </script>
+</head>
+
+<body id="hsd" class="" >
+
+  <div id="refs" class="">
+
+
+
+    <div class="main">
+      <nav class="navbar navbar-expand-lg navbar-light shadow ">
+        <a class="navbar-brand" href="#">Vendors</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+
+            <li onclick="dasher()" id="hgd" class="nav-item invisible1">
+              Dashboard
+            </li>
+            <li id="hgd" class="nav-item invisible1 tssf">
+              Vendors
+            </li>
+            <li onclick="customer()" id="hgd" class="nav-item invisible1">
+              Customers
+            </li>
+            <li onclick="products()" id="hgd" class="nav-item invisible1">
+              Products
+            </li>
+            <li onclick="services()" id="hgd" class="nav-item invisible1">
+              Services
+            </li>
+            <li onclick="chats()" id="hgd" class="nav-item invisible1">
+              Chat
+            </li>
+            <li onclick="ads()" id="hgd" class="nav-item invisible1">
+              More
+            </li>
+
+
+            <li class="nav-item rotate linear infinite invisible3" name="button" data-toggle="modal" data-target="#exampleModal2"><i class="fas fa-cog fa-md"></i></li>
+            <li class="nav-item invisible3">
+
+                <i onclick ="hello()" class="fas fa-bell fa-md "></i>
+          </li>
+            <li class="nav-item invisible3">
+              <div class="dropleft">
+                <img src="pro.png" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" alt="" width="32" height="32">
+                <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenu2">
+                  <button class="dropdown-item" type="button">Profile</button>
+                  <button class="dropdown-item" type="button">Contact</button>
+                  <button onclick="logout()"  class="dropdown-item" type="button">Logout</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item invisible2" name="button" data-toggle="modal" data-target="#exampleModal2">Settings</li>
+            <li class="nav-item invisible2" onclick ="hello()" >Notifications</li>
+            <li class="nav-item invisible2">
+              <div class="dropleft" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Profile
+                <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenu2">
+                  <button class="dropdown-item" type="button">Profile</button>
+                  <button class="dropdown-item" type="button">Contact</button>
+                  <button onclick="logout()"  class="dropdown-item" type="button">Logout</button>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="boxm">
+      <div class="topright">
+        <a href="#adds"><button type="button" name="button" onclick="addRow()" class="btn btn-outline-secondary mix1 btn-sm"><i class="fas fa-plus"></i></button></a>
+        <button type="button" name="button" onclick="removeRow('button1')" class="btn btn-outline-secondary mix2 btn-sm"><i class="fas fa-minus"></i></button>
+
+      </div>
+      <div id ="picker" class="picks col-lg col-md col-sm data1 shadow invisible">
+        <form id="sdss">
+
+
+            <input id = "pather" type="file" class="form-control-file" accept=".csv">
+            <button onclick="ok2()" type="button" class="btn btn-light">Ok</button>
+              <button onclick="cancel1()" type="button" class="btn btn-light">Cancel</button>
+        </form>
+      </div>
+
+      <div class="table-responsive">
+
+
+        <table id="vendor-table" class="table table-hover table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Sr. No</th>
+              <th scope="col">Establishment Name</th>
+              <th scope="col">Proprietor's Name</th>
+              <th scope="col">Phone Number/Email</th>
+              <th scope="col">View Profile</th>
+              <th scope="col">Assign Packages</th>
+              <th scope="col">Rent</th>
+              <th scope="col">Approve Vendor</th>
+              <th scope="col">Approve Status</th>
+
+
+
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+          </div>
+        <div id="prs" class="data1 shadow invisible">
+          <div class="right">
+            <button id="bakker" onclick="historysqs()" type="button" class="btn btn-outline invisible" name="button"><i class="fas fa-chevron-left"></i></button>
+            <label for=""><b>PROFILE</b></label>
+          </div>
+          <div class="data2">
+            <img id="sets" class="repas" src="images/download.jpg.png" alt="" width="200px" height="200px">
+
+          </div>
+          <div class="data3 table-responsive">
+
+            <table id="profile-table" class="table table-striped table-dark">
+
+            </table>
+
+          </div>
+
+
+          <div id = "bys" class="">
+
+
+
+          </div>
+        </div>
+
+      <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="adds" class="from col-lg col-md col-sm data1 shadow invisible">
+        <form id="myForm">
+          <div class="form-group">
+            <label for="exampleInputEmail1"><b>Establishment Name</b></label>
+            <input type="text" class="form-control" id="name1" aria-describedby="emailHelp" placeholder="Enter Name of the product">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1"><b>Proprietor's Name</b></label>
+            <input type="text" class="form-control" id="name2" aria-describedby="emailHelp" placeholder="Enter Category">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1"><b>Email</b></label>
+            <input type="email" class="form-control" id="name3" aria-describedby="emailHelp" placeholder="Enter Current Price">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1"><b>Phone Number</b></label>
+            <input type="number" class="form-control" id="name4" aria-describedby="emailHelp" placeholder="Enter Current Price">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1"><b>Seller_category</b></label>
+            <input type="text" class="form-control" id="name5" aria-describedby="emailHelp" placeholder="Enter Current Price">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1"><b>Service_radius</b></label>
+            <input type="text" class="form-control" id="name6" aria-describedby="emailHelp" placeholder="Enter Current Price">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1"><b>Store_type</b></label>
+            <input type="text" class="form-control" id="name7" aria-describedby="emailHelp" placeholder="Enter Current Price">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1"><b>Area</b></label>
+            <input type="text" class="form-control" id="name8" aria-describedby="emailHelp" placeholder="Enter Current Price">
+          </div>
+
+
+          <div class="form-row center">
+            <button onclick="appendRow3()" type="button" class="btn btn-outline-dark">Add</button>
+            <button onclick="cancel()" type="button" class="btn btn-outline-dark ">Cancel</button>
+          </div>
+
+        </form>
+
+      </div>
+
+      <div id="snackbar">Vendor approved please refresh the page</div>
+      <div id="snackbar1">Vendor is already Approved</div>
+
+      <div class="footer">
+        <h5>&copy; Wnkl</h5>
+
+      </div>
+
+    </div>
+
+    <div id="dsds" class="side">
+      <h3> Wnkl</h3>
+      <hr>
+      <ul class="lisyt">
+        <li onclick="dasher()" class="items"><i class="fas fa-chart-pie space"></i>DASHBOARD<span class="sr-only">(current)</span></a></li>
+        <li class="items active2"><i class="fas fa-luggage-cart space"></i>VENDORS<span class="sr-only">(current)</span></li>
+        <li onclick="customer()" class="items"><i class="fas fa-users space"></i>CUSTOMERS<span class="sr-only">(current)</span></li>
+        <li onclick="products()" class="items"><i class="fas fa-box-open space"></i>PRODUCTS<span class="sr-only">(current)</span></li>
+        <li onclick="services()" class="items"><i class="fas fa-hand-holding-usd space"></i>SERVICES<span class="sr-only">(current)</span></li>
+        <li onclick="chats()" class="items"><i class="fas fa-cart-plus space"></i>CHAT<span class="sr-only">(current)</span></li>
+        <li onclick="ads()" class="items"><i class="fab fa-adversal space"></i>MORE<span class="sr-only">(current)</span></li>
+    </div>
+
+  </div>
+
+
+
+  <div id="pull" class="side1 invisible">
+    <div class="alert">
+      <i onclick="closeside()" class="fas fa-times fas1"></i>
+      <h5>Messages</h5>
+
+
+    </div>
+    <div id="notification" class="">
+
+    </div>
+
+  </div>
+  <script>
+    window.onload = function() {
+      gesd();
+    }
+  </script>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script>
+</body>
+
+</html>
